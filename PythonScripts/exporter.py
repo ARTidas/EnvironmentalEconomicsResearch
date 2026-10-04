@@ -76,7 +76,7 @@ def export_database_to_csv():
     master_df = master_df.sort_values(by=['country', 'period'], ascending=[True, False])
     
     # Exportálás CSV formátumba
-    export_filename = "Hungary_Full_Macroeconomic_Database_1950_2026.csv"
+    export_filename = "../DataSource/Hungary_Full_Macroeconomic_Database_1950_2026.csv"
     master_df.to_csv(export_filename, index=False, encoding='utf-8')
     
     print(f"\nSikeres exportálás! A fájl elmentve: {export_filename}")
